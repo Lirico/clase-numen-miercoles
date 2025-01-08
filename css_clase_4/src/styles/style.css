@@ -1,0 +1,43 @@
+
+
+/* 
+    FLEXBOX 
+        -> Es una caracteristica de CSS que permite la distribucion de elementos desde un contenedor
+        hacia sus hijos. Crea un ecosistema flexible.
+        -> No es ideal para crear estructuras en forma de grilla. (Para esto vamos a usar GRID).
+*/
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+
+    /* La flexibilidad siempre se le 
+    aplica al contenedor padre */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Eje X */
+    align-items: center; /* Eje Y */
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+/* .uno {
+    align-self: start;
+}
+.tres {
+    align-self: end;
+} */
+
+
+
+/* 
+    Invstigar los siguientes conceptos:
+        - Flex wrap
+        - Flex grow
+        - Flex shrink
+*/
