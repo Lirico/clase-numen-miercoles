@@ -1,0 +1,29 @@
+
+
+
+
+body {
+    background-image: url(/home_css/src/assets/images/yoda_background_home_index.webp);
+}
+
+
+.home {
+    color: var(--white-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3%;
+
+    & h1 {
+        font-size: 5rem;
+    }
+    & span {
+        color: var(--first-color);
+    }
+}
+
+.vh {
+    height: 100vh;
+    background-color: var(--white-color);
+}
