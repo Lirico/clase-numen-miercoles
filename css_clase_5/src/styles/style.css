@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    GRID -> Es una caracteristica de CSS que nos permite el desarrollo de estructuras en forma de columnas,
+    filas o una combinacion de ambas (grillas).
+        -> Es posible hace distribucion con grid aunque no es recomendad. Para ello recomendamos Flexbox.s
+
+
+    MEDIA QUERY -> Es una caracteristica de CSS que nos permite adaptar los valores de ciertas propiedadas
+    ante los cambios de ancho de nuestra aplicacion.
+     -> Nos permite agregar RESPONSIVIDAD MANUAL.
+*/
+
+/**************** GRID ******************/
+/* .container {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+
+    display: grid;
+    grid-template-columns: repeat(17, 1fr); 
+}
+.item {
+    background-color: grey;
+    border: 1px white solid;
+    color: white;
+} */
+
+.viewport {
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+
+    & article {
+        height: 100%;
+        background-color: green;
+        border: 2px solid white;
+    }
+}
+
+/********* MEDIA QUERY **********/
+/***** TABLET ******/
+@media screen and (min-width: 768px){
+    .viewport {
+        grid-template-columns: repeat(2, 1fr);
+    
+        & article {
+            background-color: blue;
+        }
+    }
+}
+
+
+/***** DESKTOP/LAPTOP ******/
+@media screen and (min-width: 1400px){
+    .viewport {
+        grid-template-columns: repeat(4, 1fr);
+    
+        & article {
+            background-color: red;
+        }
+    }
+}
