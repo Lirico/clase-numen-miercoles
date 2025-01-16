@@ -1,0 +1,21 @@
+/********* CUSTOM PROPERTIES *********/
+:root {
+    --first-color: #4191FF;
+    --white-color: #ffffff;
+    --grey-light-color: #c0c0c0;
+    --first-font: 'Roboto', sans-serif;
+}
+
+/********* RESET *********/
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: var(--first-font);
+    overflow-x: hidden;
+}

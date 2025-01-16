@@ -1,0 +1,25 @@
+/********* PAGE STYLES *********/
+/****** CONTACT ******/
+.contact {
+    background-color: var(--first-color);
+    height: 100vh;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: inherit;
+}
+
+/**** FORM ****/
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+
+
+
+/**** MAP ****/
